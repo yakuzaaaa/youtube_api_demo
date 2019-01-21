@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Limbo</title>
+    <link href="limbo.css" rel="stylesheet"/>
+  </head>
+  <body>
+
+    <!-- <datalist id="video-search-list">
+    </datalist> -->
+
+    <div class="layout-row align-center justify-space-between search-utils">
+      <div class="col-25 layout-column">
+          <label>Title</label>
+          <input id="search-box">
+          <!-- <input id="search-box" list="video-search-list"> -->
+          <div id="suggestions-box"></div>
+      </div>
+      <div class="col-25 layout-column align-center">
+        <label>Published After</label>
+        <input
+          type="date"
+          id="date-pub-after"
+          max="2019-01-20">
+      </div>
+      <div class="col-25 layout-column align-center">
+        <label>Published Before</label>
+        <input
+          type="date"
+          id="date-pub-before"
+          max="2019-01-20">
+      </div>
+      <div class="col-25 align-center">
+          <button id="search-btn">Search</button>
+      </div>
+    </div>
+
+    <div class="layout-row justify-space-between" style="margin-top: 40px;">
+      <div class="video-player-parent">
+
+        <iframe id="video-player" type="text/html" width="640" height="390" allowfullscreen
+            frameborder="0"></iframe>
+
+      </div>
+      <div class="layout-column justify-center" style="width: 40%; position: relative;">
+        <div class="search-results" id="search-results-div"></div>
+        <div id="search-overlay" class="layout-column justify-center">
+          <label style="line-height:300px;">Loading...</label>
+        </div>
+        <!-- <button id="prev-search">Previous</button> -->
+        <!-- <button id="next-search">Next</button> -->
+      </div>
+    </div>
+
+    <button id="toggle-theater" class="theater-toggle-btn">Enter theater mode</button>
+    <script src="limbo.js"></script>
+  </body>
+</html>

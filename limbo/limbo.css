@@ -1,0 +1,153 @@
+html,body {
+  min-height: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.col-25 {
+  width: 25%;
+  text-align: center;
+}
+
+.search-utils {
+    height: 70px;
+    background-color: teal;
+    color: white;
+    padding: 0 10px;
+}
+
+.layout-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.layout-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-center {
+  justify-content: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.search-results {
+  padding: 10px;
+  height: 370px;
+  overflow-y: scroll;
+}
+
+.search-item {
+  margin: 24px 0;
+  padding: 5px;
+  line-height: 95px;
+  text-align: center;
+  font-size: 14px;
+  height: 95px;
+  border-radius: 4px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.search-item img {
+  height: 95px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.search-item label {
+    text-align: start;
+    margin-left: 10px;
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.search-item:first-child {
+  margin-top: 0;
+}
+
+#search-overlay {
+  display: none;
+  width: 100%;
+  height: 370px;
+  margin: 1px 1px;
+  position: absolute;
+  text-align: center;
+  color: teal;
+  background-color: rgba(243, 243, 247, 0.93);
+}
+
+.search-item:hover {
+  background-color: teal;
+  color: white;
+}
+
+.video-player-parent {
+  width: 700px;
+  height: 400px;
+  /* background-color: black; */
+  /* border: 1px solid black; */
+}
+.video-player-parent.theater-mode {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  background-color: black;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70%;
+}
+
+.video-player-parent.theater-mode iframe{
+  width: 850px;
+  height: 100%;
+}
+
+#suggestions-box {
+  position: fixed;
+  top: 55px;
+  left: 10px;
+  width: 250px;
+  background-color: teal;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.suggestion-item:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+button {
+  background-color: teal;
+  color: white;
+  height: 35px;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.theater-toggle-btn {
+  margin-top: 60px;
+}
+
+#prev-search,#next-search {
+  display: none;
+}
