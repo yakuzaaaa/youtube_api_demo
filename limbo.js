@@ -243,7 +243,7 @@ var limbo = {};
   function setIframeSourceUrl(videoId) {
     if(videoId) {
       videoIframe.style.display = "";
-      videoIframe.src = `http://www.youtube.com/embed/${videoId}?enablejsapi=1&origin=http://example.com`;
+      videoIframe.src = `https://www.youtube.com/embed/${videoId}?enablejsapi=1&origin=https://example.com`;
       currentlyPlaying = true;
     } else {
       videoIframe.style.display = "none";
